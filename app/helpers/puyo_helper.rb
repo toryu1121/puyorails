@@ -1,0 +1,2 @@
+module PuyoHelper
+end

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  field: MyString
+  sousa: MyString
+  yokoku: MyString
+  puyo: MyString
+  roll: MyString
+  width: MyString
+  double: MyString
+
+two:
+  field: MyString
+  sousa: MyString
+  yokoku: MyString
+  puyo: MyString
+  roll: MyString
+  width: MyString
+  double: MyString
