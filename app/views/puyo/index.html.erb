@@ -1,2 +1,41 @@
-<h1>Puyo#index</h1>
-<p>Find me in app/views/puyo/index.html.erb</p>
+<h1>Test10d#index</h1>
+
+<%
+#変数宣言
+    @index_link1 = "index", "update"
+    @index_story0_var = "コピペして使用"
+%>
+
+<%###########################%>
+<%#表示メソッド %>
+    <% def index_story0 %>
+        <% #コピペして使用 %>
+    <% end %>
+    
+    <% def index_story1 %>
+        <% @index_link1.each do |i| %>
+            <%= link_to i, :controller => "puyo", :action => i %>
+        <% end %>
+    <% end %>
+    
+    <% def index_story2 %>
+        <%= form_tag( { action: :create }, { remote: true } ) do %>
+        　<fieldset>
+        　　<div><%= submit_tag :post %></div>
+        　</fieldset>
+        <% end %>
+    <% end %>
+    
+    <% def index_story3 %>
+        <div id='divtest10d'>
+          <%= render partial: "list" %>
+        </div>
+    <% end %>
+<%########################## %>
+
+<%#表示部分 %>
+    <% index_story1 %>
+    <% index_story2 %>
+    <% index_story3 %>
+
+<%########################## %>

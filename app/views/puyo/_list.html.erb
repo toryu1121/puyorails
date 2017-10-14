@@ -1,0 +1,39 @@
+<%###########################%>
+<%
+#変数宣言
+    @test_test_test = "test"
+%>
+
+<%###########################%>
+<%#計算メソッドの作成 %>
+    <% def list_cal0 %>
+        <% #コピペして使用 %>
+    <% end %>
+
+<%###########################%>
+<%#表示メソッド %>
+    <% def list_story0 %>
+        <% #コピペして使用 %>
+    <% end %>
+    
+    <% def list_story1 %>
+      <fieldset>
+        <legend><h1>listですわぁ(--)</h1></legend>
+            <% list_story2 %>
+      </fieldset>
+    <% end %>
+    
+    <% def list_story2 %>
+        <% @test10d_list.each do |t2model| %>
+          <fieldset>
+            <p><%= t2model.field %></p>
+          </fieldset>
+        <% end %>
+    <% end %>
+<%########################## %>
+
+<%#表示部分 %>
+    <%# cal0 %>
+    <% list_story1 %>
+    
+<%########################## %>
